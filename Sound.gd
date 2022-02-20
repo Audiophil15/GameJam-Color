@@ -55,6 +55,20 @@ func startUnderworldMusic():
 func stopUnderworldMusic():
 	stopMusic(inGameNode, 1)
 	
+func loseEffect():
+	playEffect($Effect/Lost)
+
+func winEffect():
+	playEffect($Effect/Win)
+
+func deathEffect():
+	playEffect($Effect/Death)
+	
+func hurtEffect():
+	playEffect($Effect/Hurt)
+	
+func hitEffect():
+	playEffect($Effect/Hit)
 func pauseSet():
 	playEffect($"Effect/Menu Select")
 	time = inGameNode.get_playback_position()

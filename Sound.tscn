@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Art/Audio/Music/10 - wandering around looking for ammunition.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Art/Audio/Effects/Deep Cut.mp3" type="AudioStream" id=2]
@@ -7,7 +7,7 @@
 [ext_resource path="res://Art/Audio/Effects/DavidKBD - Reckless Punk-Metal Pack - 12 - You Loss.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Art/Audio/Effects/Menu Select.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Art/Audio/Music/DavidKBD - Reckless Punk-Metal Pack - 03 - Keep My Rhythm, If You Can.ogg" type="AudioStream" id=7]
-[ext_resource path="res://Art/Audio/Effects/Menu Select 2.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Art/Audio/Effects/Menu Back.mp3" type="AudioStream" id=8]
 [ext_resource path="res://Art/Audio/Music/DavidKBD - Reckless Punk-Metal Pack - 02 - Keep Away or Die-Start.ogg" type="AudioStream" id=9]
 [ext_resource path="res://Art/Audio/Music/DavidKBD - Reckless Punk-Metal Pack - 09 - Fuck!.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Art/Audio/Music/underground-town.ogg" type="AudioStream" id=11]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Art/Audio/Effects/Death Sound 4.mp3" type="AudioStream" id=15]
 [ext_resource path="res://Art/Audio/Music/DavidKBD - Reckless Punk-Metal Pack - 08 - What is my name_.ogg" type="AudioStream" id=16]
 [ext_resource path="res://Sound.gd" type="Script" id=17]
+[ext_resource path="res://Art/Audio/Effects/Drop.mp3" type="AudioStream" id=18]
 
 [node name="Sound" type="Node"]
 pause_mode = 2
@@ -66,6 +67,9 @@ stream = ExtResource( 14 )
 stream = ExtResource( 15 )
 
 [node name="Hurt" type="AudioStreamPlayer" parent="Effect"]
+stream = ExtResource( 18 )
+
+[node name="Hit" type="AudioStreamPlayer" parent="Effect"]
 stream = ExtResource( 2 )
 
 [node name="Menu Select" type="AudioStreamPlayer" parent="Effect"]

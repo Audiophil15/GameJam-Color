@@ -1388,7 +1388,7 @@ position = Vector2( 959.405, 696 )
 [node name="PauseMenu" parent="." instance=ExtResource( 4 )]
 
 [node name="Possessed" parent="." instance=ExtResource( 5 )]
-position = Vector2( 856, 680 )
+position = Vector2( 816, 680 )
 
 [connection signal="timeout" from="Spawner" to="." method="_on_Spawner_timeout"]
 [connection signal="timeout" from="MusicDelay" to="." method="_on_MusicDelay_timeout"]

@@ -84,6 +84,7 @@ func attack():
 func getHit():
 	ishurt = true
 	animations.play(animHurtName)
+	Sound.hitEffect()
 	life -= 6
 
 func death():

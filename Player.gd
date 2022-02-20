@@ -119,11 +119,13 @@ func attack(num):
 func getHit():
 	ishurt = true
 	animations.play(animHurtName)
+	Sound.hurtEffect()
 
 func death():
 	isdead = true
 	$CollisionBox.disabled = true
 	$Body/CollisionShape2D.disabled = true
+	Sound.deathEffect()
 	Sound.stopUnderworldMusic()
 	animations.play(animDeathName)
 	yield(animations, "animation_finished")

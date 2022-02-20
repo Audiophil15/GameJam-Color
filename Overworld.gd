@@ -49,7 +49,7 @@ func _on_BullyComes_timeout():
 	$Busted.visible = false
 	$Bully.play("Walk (R)")
 	bvx = 2
-	bvy = 0.15
+	bvy = 0.1
 	yield(get_tree().create_timer(4),"timeout")
 	bvx = 0
 	bvy = 0
