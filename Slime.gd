@@ -7,6 +7,7 @@ var life = maxLife
 var speed = Vector2()
 var speedfactor = 150
 var damages = 21
+var dead = false
 var followingPlayer = false
 var attackAnimPlaying = false
 var nextToPlayer = false
@@ -64,6 +65,9 @@ func getHit():
 	life -= 6
 
 func death():
+	if !dead:
+		$"/root/EnemiesGlobal".killedEnemies += 1
+		dead = true
 	animations.play("Death")
 
 func _on_AnimationPlayer_animation_finished(anim_name):

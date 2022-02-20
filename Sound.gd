@@ -55,6 +55,8 @@ func startUnderworldMusic():
 func stopUnderworldMusic():
 	stopMusic(inGameNode, 1)
 	
+
+
 func loseEffect():
 	playEffect($Effect/Lost)
 

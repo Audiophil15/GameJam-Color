@@ -2202,8 +2202,7 @@ script = ExtResource( 21 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 4, 4 )
 frames = SubResource( 145 )
-animation = "Attack (L)"
-frame = 9
+animation = "Idle (L)"
 offset = Vector2( 0, -14.7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -2245,21 +2244,25 @@ shape = SubResource( 167 )
 position = Vector2( -63.4041, -4.71385 )
 rotation = 0.00523599
 shape = SubResource( 168 )
+disabled = true
 
 [node name="Hitbox (Right)" type="CollisionShape2D" parent="Attack"]
 position = Vector2( 61.0722, -1.21903 )
 rotation = -0.0366519
 shape = SubResource( 168 )
+disabled = true
 
 [node name="Hitbox (Up)" type="CollisionShape2D" parent="Attack"]
 position = Vector2( 0.681015, -39.2755 )
 rotation = -1.55858
 shape = SubResource( 169 )
+disabled = true
 
 [node name="Hitbox (Down)" type="CollisionShape2D" parent="Attack"]
 position = Vector2( 0.665924, 39.5336 )
 rotation = 1.57778
 shape = SubResource( 170 )
+disabled = true
 
 [node name="Search" type="Area2D" parent="."]
 

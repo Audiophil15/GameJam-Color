@@ -126,9 +126,8 @@ func death():
 	$CollisionBox.disabled = true
 	$Body/CollisionShape2D.disabled = true
 	Sound.deathEffect()
-	Sound.stopUnderworldMusic()
+	Sound.loseEffect()
 	animations.play(animDeathName)
-	yield(animations, "animation_finished")
 	emit_signal("dead")
 
 func _on_AnimationPlayer_animation_finished(anim_name):

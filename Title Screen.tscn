@@ -31,9 +31,9 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
-margin_bottom = 140.0
+margin_bottom = 726.0
 size_flags_vertical = 0
-custom_constants/separation = 50
+custom_constants/separation = -56
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -60,9 +60,9 @@ valign = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_left = 627.0
-margin_top = 650.0
+margin_top = 544.0
 margin_right = 1293.0
-margin_bottom = 726.0
+margin_bottom = 620.0
 size_flags_horizontal = 4
 size_flags_vertical = 2
 custom_constants/separation = 355
@@ -86,6 +86,25 @@ custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.235294, 1, 0.470588, 1 )
 text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -165.0
+size_flags_vertical = 0
+text = "             Overworld assets : https://adamatomic.itch.io       |        Overworld Music : https://joshua-mclean.itch.io
+           Underworld assets : https://foozlecc.itch.io        |        Underworld Musics : https://davidkbd.itch.io
+Hero / Monsters assets : https://foozlecc.itch.io	        |          Title Music : https://ragnarrandom.itch.io
+Audio FXs : https://omegaosg.itch.io / https://davidkbd.itch.io
+
+Contains music ©2021 Joshua McLean
+Licensed under Creative Commons Attribution 4.0 International"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="button_up" from="VBoxContainer/HBoxContainer/Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="VBoxContainer/HBoxContainer/Quit" to="." method="_on_Quit_button_up"]

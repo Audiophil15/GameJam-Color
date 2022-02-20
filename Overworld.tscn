@@ -425,7 +425,7 @@ scale = Vector2( 2, 2 )
 z_index = -1
 frames = SubResource( 28 )
 animation = "Idle (R)"
-frame = 2
+frame = 4
 playing = true
 
 [node name="MonsterBully" type="AnimatedSprite" parent="."]

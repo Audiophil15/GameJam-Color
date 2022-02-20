@@ -5,6 +5,7 @@ extends KinematicBody2D
 var maxLife = 20
 var life = maxLife
 var damages = 13
+var dead = false
 var speed = Vector2()
 var speedfactor = 150
 var followingPlayer = false
@@ -88,6 +89,9 @@ func getHit():
 	life -= 6
 
 func death():
+	if !dead:
+		$"/root/EnemiesGlobal".killedEnemies += 1
+		dead = true
 	animations.play(animDeathName)
 
 func _on_AnimationPlayer_animation_finished(anim_name):
