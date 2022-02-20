@@ -1,0 +1,21 @@
+~~ Musique d'intro mignonne
+## Gamin arrive dans la cour
+"J'ai un peu faim, je vais prendre le goûter que m'a donné tata maintenant"
+
+## Sort son goûter
+## Un bully le voit et vient pour lui racketter
+B1 : "Dis, ça a l'air bon, tu me passes ton goûter ?"
+G  : "Ben non, c'est mon goûter"
+## Les autres bully (tous les gens dans la cour) se retournent vers la scène
+B1 : "Eh fais pas le malin, de toute façon ici c'est moi qui décide, donne-le-moi."
+G  : "Euh, tu deviens tout vert"
+B1 : "Ne change pas de sujet."
+## B1 se transforme en monstre
+G  : "Hein ?! Mais qu'est-ce qui se passe ici ?"
+## B1 parle en se transformant
+~~ Musique d'intro s'arrête
+B1 : "Ce... goûter... est à moi... RAAAAAAH !!"
+G  : (dans sa tête) "C'est drôle, ça me rappelle ce jeu sur la GameBoy"
+G  : "Ben tu sais quoi tu as l'air déterminé, alors puisque c'est ça essaye donc de me le prendre."
+
+~~ Musique métal commence, le jeu démarre
