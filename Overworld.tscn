@@ -300,24 +300,24 @@ atlas = ExtResource( 3 )
 region = Rect2( 32, 144, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 144, 32, 48 )
+atlas = ExtResource( 3 )
+region = Rect2( 32, 48, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 5 )
-region = Rect2( 32, 144, 32, 48 )
+region = Rect2( 0, 144, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 5 )
-region = Rect2( 64, 144, 32, 48 )
+region = Rect2( 32, 144, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 5 )
-region = Rect2( 96, 144, 32, 48 )
+region = Rect2( 64, 144, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 3 )
-region = Rect2( 32, 48, 32, 48 )
+atlas = ExtResource( 5 )
+region = Rect2( 96, 144, 32, 48 )
 
 [sub_resource type="SpriteFrames" id=18]
 animations = [ {
@@ -326,14 +326,14 @@ animations = [ {
 "name": "Idle (U)",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
-"loop": true,
-"name": "Walk (U)",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 17 ) ],
+"frames": [ SubResource( 13 ) ],
 "loop": true,
 "name": "Idle (L)",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "Walk (U)",
 "speed": 5.0
 } ]
 
@@ -416,7 +416,7 @@ scale = Vector2( 2, 2 )
 z_index = -1
 frames = SubResource( 18 )
 animation = "Walk (U)"
-frame = 1
+frame = 3
 playing = true
 
 [node name="Bully" type="AnimatedSprite" parent="."]
